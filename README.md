@@ -7,17 +7,20 @@ Project Goals
 - Promote fair, data-driven financial support decisions
 Model Overview
 We use a pruned decision tree for its balance of interpretability and predictive power. Top predictors include missed payments, high credit utilization, debt-to-income ratio, low credit scores, and income levels. The model outputs a risk probability and a binary flag for intervention.
-Modeling Pipeline
+
+✔Modeling Pipeline
 - Load and clean data (imputation, outlier handling, encoding)
 - Engineer risk-related features (e.g., high utilization and high DTI flags)
 - Train and tune decision tree with cross-validation
 - Output customer-level risk scores and predicted flags
-Collections Decision System
+
+✔Collections Decision System
 - Inputs: Customer demographics, credit metrics, payment history, and account details
 - Decision Logic: Combination of model predictions and business rules
 - Actions: Tiered outreach from reminders to hardship plans or human review
 - Learning: Tracks intervention outcomes for continuous model refinement
-Safeguards and Ethical AI
+- 
+✔Safeguards and Ethical AI
 We implement fairness checks across customer segments, explainable decision paths, and clear communication with users. The system complies with privacy regulations and includes manual review for high-risk or disputed cases.
 Impact Highlights
 - 20% reduction in new delinquencies
@@ -25,11 +28,6 @@ Impact Highlights
 - 25% savings in collection costs
 - Improved customer trust and ethical transparency
 - Scalable, automated support paired with human oversight
-Repository Contents
-- data/: Cleaned datasets
-- notebooks/: EDA and model development
-- scripts/: Core modeling and scoring logic
-- reports/: Slides, documentation, and analysis
-- README.md: Project summary and usage guide
+  Refer to above files
 
 
